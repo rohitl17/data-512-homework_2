@@ -61,10 +61,12 @@ The way the ORES model evaluates the quality of the article itself appears to be
 
 
 #### Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
-Yes, the content moderation or NLP-based tools which scrape data from the internet, might have inherent biases. For example, we saw in the readings that how cultural-linguistic, demographic or gender biases lead to potential incorrect predictions from the models. Or the Islamaphobia article suggests how GPT-3 was against the particular religion. These limitations are due to data.
+Yes, the content moderation or NLP-based tools which scrape data from the internet, might have inherent biases. For example, we saw in the readings that how cultural-linguistic, demographic or gender biases lead to potential incorrect predictions from the models. A second example was the Islamaphobia article suggests how GPT-3 was against the particular religion. These limitations happen to occur to due to the data fed into these AI systems which work on the principle of "Garbage In, Garbage Out".
+
 
 #### How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
-If the data is fed into the ML model, I would think of normalizing it as to make the data more representative of the fact that each country has almost the same number of politicians. 
+If the data is fed into the ML model, I would think of normalizing it as to make the data more representative of the fact that each country has almost the same number of politicians. The ORES AI tool should also be retrained on a more representative sample to remove any potential content-structuring biases it might have.
+
 
 ## Repository Structure
 Here are the main folders in our github data-512-homework_2 repository:
