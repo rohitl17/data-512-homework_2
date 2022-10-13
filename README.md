@@ -48,17 +48,18 @@ Stub - Stub-class article
 ## Research Implications
  
 
-Include write-up paragraphs. One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist).
--> Always better to backup data with domain knowledge. Notsure if articles_per_capita is a good measure to analyze against the scores. The biases can exist due to multiple reasons: demographic, gender or in general cultural biases for countries where the advent of internet hasn't been that much, especially places where the literacy rates might be low.
+Include write-up paragraphs. One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist). 
+
+-> Always better to backup data with domain knowledge. Notsure if articles_per_capita is a good measure to analyze against the scores. The biases can exist due to multiple reasons: demographic, gender or in general cultural biases for countries where the advent of internet hasn't been that much, especially places where the literacy rates might be low. Some surprises about the API were that the same politician's names occurred under different countries.
 
 What biases did you expect to find in the data (before you started working with it), and why?
 
-##### Expected biases: Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldnt be famous. ORES scores would be related to a country.
+##### Expected biases: Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldnt be famous. Also, some of the recent articles by Wikipedia founder said that there were multiple occurrences of idealogical biases. So, I believe ORES scores would be related to a country or might have an inherent idealogical bias.
 
 What (potential) sources of bias did you discover in the course of your data processing and analysis?
 What might your results suggest about (English) Wikipedia as a data source?
 
-##### Issues: Data is dynamically changing on multiple runs hence could lead to inconsistency in analysis. The ORES scores probably might not be trustworthy as they come from an AI model.
+##### Issues: Data is dynamically changing on multiple runs hence could lead to inconsistency in analysis. The ORES scores probably might not be trustworthy as they come from an AI model which could be a victim of idealogical, racial, gender or cultural bias.
 
 What might your results suggest about the internet and global society in general?
 Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
