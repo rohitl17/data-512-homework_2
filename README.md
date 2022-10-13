@@ -54,7 +54,7 @@ Include write-up paragraphs. One of your paragraphs should reflect on what you h
 
 What biases did you expect to find in the data (before you started working with it), and why?
 
-##### Expected biases: Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldnt be famous. Also, some of the recent articles by Wikipedia founder said that there were multiple occurrences of idealogical biases. So, I believe ORES scores would be related to a country or might have an inherent idealogical bias.
+##### Expected biases: Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldnt be famous. Also, some of the recent articles by Wikipedia founder said that there were multiple occurrences of idealogical biases. So, I believe ORES scores would be related to a country or might have an inherent idealogical bias. The asian and african countries articles would have less number of articles per capita attributing to literacy rates or the population in general there.
 
 What (potential) sources of bias did you discover in the course of your data processing and analysis?
 What might your results suggest about (English) Wikipedia as a data source?
