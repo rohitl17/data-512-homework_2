@@ -46,25 +46,23 @@ Stub - Stub-class article
 3. To avoid divide-by-zero errors, we have removed the countries with 0 population. This is probably a shortcoming of having input population data in millions and not choosing the right data type/precision for the data from the source. 
 
 ## Research Implications
- 
+
+#### Brief writeup
 To start with what I learnt in this assignment is it is always better to backup data with domain knowledge before working on a data science project. Majority of the data on the internet have some inherent bias. The biases can exist due to multiple reasons: demographic, gender or in general cultural biases for countries where the advent of internet hasn't been that much, especially places where the literacy rates might be low. Additionally, carrying on the documentation and reproducibility lessons from the last assignment. One thing I suspected at the start of the analysis was if articles_per_capita is a good measure to analyze the coverage and if that correlates with ORES scores. Seems like the former has very low values and the values are highly dependent on the country/region's population. For example, majority of the top coverage countries/regions are the ones with lowest population and vice-versa for the bottom. Also, when it came to article quality the non-native English speaking population had lesser high quality articles over the native speakers, which is a cultural-linguistic bias. One of the surprising aspects about the API were that the same politician's names occurred under different countries and could cause redundancy issues if we go further deeper into the analysis.
 
-What biases did you expect to find in the data (before you started working with it), and why?
+#### What biases did you expect to find in the data (before you started working with it), and why?
+Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldn't be famous. Also, some of the recent articles by Wikipedia founder said that there were multiple occurrences of idealogical biases on Wikipedia. So, I believe ORES scores would be related to a country or might have an inherent idealogical bias. The asian and african countries articles would have less number of articles per capita attributing to literacy rates or the cultural-lingusitic bias general there, which means articles in their native languages would be better.
 
-##### Expected biases: Smaller countries would have less number of articles but higher number of articles_per_capita. The ratings of politicians from these countries would have been lessser since many of the politicians wouldnt be famous. Also, some of the recent articles by Wikipedia founder said that there were multiple occurrences of idealogical biases. So, I believe ORES scores would be related to a country or might have an inherent idealogical bias. The asian and african countries articles would have less number of articles per capita attributing to literacy rates or the population in general there.
+#### What might your results suggest about (English) Wikipedia as a data source?
+Data is dynamically changing on multiple runs hence could lead to inconsistency in analysis. The ORES scores probably might not be trustworthy as they come from an AI model which could be a victim of idealogical, racial, gender or cultural bias. From the ORES Wiki:
+ > The wp10 model bases its predictions on __structural characteristics__ of the article. E.g. How many sections are there? Is there an infobox? How many references? And do the references use a {{cite}} template? The wp10 model __doesn't evaluate the quality of the writing__ or whether or not there's a tone problem (e.g. a point of view being pushed). However, many of the structural characteristics of articles __seem to correlate__ strongly with good writing and tone, so the models work very well in practice.
+The way the ORES model evaluates the quality of the article itself appears to be biased towards the structure of the article than the content. In contrast, the original WP10 [article assessment](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment#Grades) performed by humans has very strongly worded and thoughtful criteria to attain a certain quality level.
 
-What (potential) sources of bias did you discover in the course of your data processing and analysis?
-What might your results suggest about (English) Wikipedia as a data source?
+#### Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
+Yes, the content moderation or NLP-based tools which scrape data from the internet, might have inherent biases. For example, we saw in the readings that how cultural-linguistic, demographic or gender biases lead to potential incorrect predictions from the models. Or the Islamaphobia article suggests how GPT-3 was against the particular religion. These limitations are due to data.
 
-##### Issues: Data is dynamically changing on multiple runs hence could lead to inconsistency in analysis. The ORES scores probably might not be trustworthy as they come from an AI model which could be a victim of idealogical, racial, gender or cultural bias.
-
-What might your results suggest about the internet and global society in general?
-Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
-#### Yes, the content moderation or NLP-based tools which scrape data from the internet, might have inherent biases. For example, we saw in the readings that how cultural-linguistic, demographic or gender biases lead to potential incorrect predictions from the models. Or the Islamaphobia article suggests how GPT-3 was against the particular religion. These limitations are due to data.
-
-Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might still be appropriate and useful, despite its inherent limitations and biases?
-How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
-#### If the data is fed into the ML model, I would think of normalizing it as to make the data more representative of the fact that each country has almost the same number of politicians. 
+#### How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+If the data is fed into the ML model, I would think of normalizing it as to make the data more representative of the fact that each country has almost the same number of politicians. 
 
 ## Repository Structure
 Here are the main folders in our github data-512-homework_2 repository:
