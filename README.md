@@ -42,15 +42,12 @@ Stub - Stub-class article
 ## Issues and Special Considerations
 
 1. Countries are mapped to the regions that are closest/lowest in the hierarchy of regions
-2. The politician entries have duplicates with just countries name being different, these have eliminated to keep the data consistent. 
+2. The politician entries have duplicates, these have eliminated to keep the data consistent. 
 3. To avoid divide-by-zero errors, we have removed the countries with 0 population. This is probably a shortcoming of having input population data in millions and not choosing the right data type/precision for the data from the source. 
 
 ## Research Implications
  
-
-Include write-up paragraphs. One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist). 
-
--> Always better to backup data with domain knowledge. Notsure if articles_per_capita is a good measure to analyze against the scores. The biases can exist due to multiple reasons: demographic, gender or in general cultural biases for countries where the advent of internet hasn't been that much, especially places where the literacy rates might be low. Some surprises about the API were that the same politician's names occurred under different countries.
+To start with what I learnt in this assignment is it is always better to backup data with domain knowledge before working on a data science project. Majority of the data on the internet have some inherent bias. The biases can exist due to multiple reasons: demographic, gender or in general cultural biases for countries where the advent of internet hasn't been that much, especially places where the literacy rates might be low. Additionally, carrying on the documentation and reproducibility lessons from the last assignment. One thing I suspected at the start of the analysis was if articles_per_capita is a good measure to analyze the coverage and if that correlates with ORES scores. Seems like the former has very low values and the values are highly dependent on the country/region's population. For example, majority of the top coverage countries/regions are the ones with lowest population and vice-versa for the bottom. Also, when it came to article quality the non-native English speaking population had lesser high quality articles over the native speakers, which is a cultural-linguistic bias. One of the surprising aspects about the API were that the same politician's names occurred under different countries and could cause redundancy issues if we go further deeper into the analysis.
 
 What biases did you expect to find in the data (before you started working with it), and why?
 
