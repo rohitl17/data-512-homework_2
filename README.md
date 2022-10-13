@@ -56,7 +56,9 @@ Smaller countries would have less number of articles but higher number of articl
 #### What might your results suggest about (English) Wikipedia as a data source?
 Data is dynamically changing on multiple runs hence could lead to inconsistency in analysis. The ORES scores probably might not be trustworthy as they come from an AI model which could be a victim of idealogical, racial, gender or cultural bias. From the ORES Wiki:
  > The wp10 model bases its predictions on __structural characteristics__ of the article. E.g. How many sections are there? Is there an infobox? How many references? And do the references use a {{cite}} template? The wp10 model __doesn't evaluate the quality of the writing__ or whether or not there's a tone problem (e.g. a point of view being pushed). However, many of the structural characteristics of articles __seem to correlate__ strongly with good writing and tone, so the models work very well in practice.
+
 The way the ORES model evaluates the quality of the article itself appears to be biased towards the structure of the article than the content. In contrast, the original WP10 [article assessment](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment#Grades) performed by humans has very strongly worded and thoughtful criteria to attain a certain quality level.
+
 
 #### Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
 Yes, the content moderation or NLP-based tools which scrape data from the internet, might have inherent biases. For example, we saw in the readings that how cultural-linguistic, demographic or gender biases lead to potential incorrect predictions from the models. Or the Islamaphobia article suggests how GPT-3 was against the particular religion. These limitations are due to data.
