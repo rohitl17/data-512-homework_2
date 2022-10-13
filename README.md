@@ -73,14 +73,13 @@ Here are the main folders in our github data-512-homework_2 repository:
 │   ├── wp_countries-no_match.txt
 │   ├── wp_politicians_by_country.csv
 ```
-## Input Data Files
+## Input Data 
 - population data (population_by_country_2022.csv) - The schema consists of countries, region and population for each country/region
 - Politicians data (politicians_by_country.SEPT.2022.csv) - Consists of crawled Wikipedia article pages about politicians different countries
 
-## Output Data Files
-
-### Countries with No Match
-wp_countries-no_match.txt - All countries for which there are no matches i.e., either the population dataset does not have an entry for the equivalent Wikipedia country, or vice-versa
+## Output Data 
+### Country data and Politician data missing mapping
+wp_countries-no_match.txt - All countries for which population dataset does not have an entry for the equivalent Wikipedia country, or vice-versa
 
 ### Consolidated Data
 wp_politicians_by_country.csv - Refined data output with politicians mapped to countries and region, basically the data table used for analysis.
