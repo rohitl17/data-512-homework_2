@@ -3,7 +3,7 @@
 This repository has assignment for DATA-512 - Human Centered Design Homework 2.
 
 
-# Goal: 
+# Goal
 
 ### Considering Bias in Data
 
