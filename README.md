@@ -3,7 +3,9 @@
 This repository has assignment for DATA-512 - Human Centered Design Homework 2.
 
 
-# Goal: Considering Bias in Data
+# Goal: 
+
+### Considering Bias in Data
 
 The project aims at acquiring, constructing, analyzing and publishing a dataset and analysis for a set of politician wiki pages. It emphasizes one main aspect/shortcomings of large datasets - bias. The biases in data can lead to bias in models and inferences drawn from them leading to fairness concerns. This analysis highlights how bias affects article quality predictions and such biases can be commonly seen in other data science projects
 
