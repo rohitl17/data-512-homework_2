@@ -39,9 +39,9 @@ Stub - Stub-class article
 
 ## Issues and Special Considerations
 
-1. There are few duplicates in the politicians input data file. All the absolute duplicates are filtered from the data but the duplicates at article name level are taken into account for per-capita calculations. 
-2. There are few countries where the population is 0. This can be because the value is in millions and is rounded to the nearest decimal. These countries are filtered at Step 4 where the article-per-capita is calculated as they give infinity values because of 0 in the denominator
-3. Regions with cumulative population values are eliminated and the countries are mapped to the regions that are closest/lowest in the hierarchy of regions
+1. Countries are mapped to the regions that are closest/lowest in the hierarchy of regions
+2. The politician entries have duplicates with just countries name being different, these have eliminated to keep the data consistent. 
+3. To avoid divide-by-zero errors, we have removed the countries with 0 population. This is probably a shortcoming of having input population data in millions and not choosing the right data type/precision for the data from the source. 
 
 ## Research Implications
 
@@ -72,8 +72,8 @@ Here are the main folders in our github data-512-homework_2 repository:
 │   ├── wp_politicians_by_country.csv
 ```
 ## Input Data Files
-- population data (population_by_country_2022.csv) - Consists of countries, region and population for each country/region
-- Politicians data (politicians_by_country.SEPT.2022.csv) - Consists of crawled Wikipedia article pages about politicians fropm wide range of countries
+- population data (population_by_country_2022.csv) - The schema consists of countries, region and population for each country/region
+- Politicians data (politicians_by_country.SEPT.2022.csv) - Consists of crawled Wikipedia article pages about politicians different countries
 
 ## Output Data Files
 
@@ -81,4 +81,4 @@ Here are the main folders in our github data-512-homework_2 repository:
 wp_countries-no_match.txt - All countries for which there are no matches i.e., either the population dataset does not have an entry for the equivalent Wikipedia country, or vice-versa
 
 ### Consolidated Data
-wp_politicians_by_country.csv - Consolidated the remaining data that contains politicians data with population data into a single CSV file
+wp_politicians_by_country.csv - Refined data output with politicians mapped to countries and region, basically the data table used for analysis.
